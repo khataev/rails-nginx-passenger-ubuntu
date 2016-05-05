@@ -8,7 +8,7 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
 -----------------------------------------------------------
   заходим на сервер под root
   
-    ssh root@192.168.0.100
+    ssh root@188.166.160.14
     
   создаем пользователя deployer
   
