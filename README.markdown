@@ -28,11 +28,11 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
 
   найти строчку Port 22 и заменить ее на
   
-    Port 4321 (или любой другой)
+    Port 7777 (или любой другой)
   
   перезагружаем SSH
   
-    sudo reload ssh
+    sudo reload ssh (service ssh restart)
 
   завершаем сеанс пользователя root
   
@@ -40,7 +40,7 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
 
   заходим на сервер под deployer
   
-    ssh deployer@192.168.0.100 -p 4321
+    ssh deployer@192.168.0.100 -p 7777
   
   создаем папку ssh
   
@@ -52,7 +52,7 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
   
   на локальном компьютере отправляем ssh ключ на сервер
   
-    cat ~/.ssh/id_rsa.pub | ssh -p 4321 deployer@192.168.0.100 'cat >> /home/deployer/.ssh/authorized_keys'
+    cat ~/.ssh/id_rsa.pub | ssh -p 7777 deployer@188.166.160.14 'cat >> /home/deployer/.ssh/authorized_keys'
   
   на сервере нужно убедиться что authorized_keys создан
   
@@ -64,7 +64,7 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
   
   заходим на сервер под deployer если все хорошо, то пароль не спросит
   
-    ssh deployer@192.168.0.100 -p 4321
+    ssh deployer@188.166.160.14 -p 7777
 
 Update and upgrade
 ------------------
@@ -74,7 +74,7 @@ Update and upgrade
     sudo reboot
     
   после перезагрузки заходим на сервер под deployer
-    ssh deployer@192.168.0.100 -p 4321
+    ssh deployer@188.166.160.14 -p 7777
 
 Тайм зона
 --------------
@@ -89,7 +89,7 @@ Update and upgrade
   
   выбираем город
   
-    Kiev
+    Moscow
   
   убелиться что таймзона изменилась
   
@@ -141,7 +141,7 @@ Update and upgrade
 
   устанавливаем PostgreSQL
   
-    sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-9.3
+    sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-9.5
   
   устанавливаем пароль для postgres
   
