@@ -243,4 +243,13 @@ Sphinx
     
     sudo apt-get install sphinxsearch
     
+Mail Server
+-----------
+  устанавливаем сервер
+  
+    sudo apt-get install exim4-daemon-light mailutils
+  
+  настраиваем его
+    
+    sudo dpkg-reconfigure exim4-config
     
