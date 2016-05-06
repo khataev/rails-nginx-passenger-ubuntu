@@ -165,6 +165,8 @@ Nginx
     gem install passenger
   
     sudo apt-get install libcurl4-openssl-dev
+    
+    sudo dd if=/dev/zero of=/swap bs=1M count=1024 && sudo mkswap /swap && sudo swapon /swap
   
     rvmsudo passenger-install-nginx-module
     
