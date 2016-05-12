@@ -65,6 +65,8 @@ RVM Nginx Passenger PostgreSQL Redis SphinxSearch
   заходим на сервер под deployer если все хорошо, то пароль не спросит
   
     ssh deployer@188.166.160.14 -p 7777
+    
+  ps: можно установить ключи заранее по [этой инструкции](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
 
 Update and upgrade
 ------------------
