@@ -199,7 +199,7 @@ Nginx
 
   загружаем скрипт управления nginx
   
-    git clone https://github.com/sanyco86/rails-nginx-passenger-ubuntu.git
+    git clone https://github.com/khataev/rails-nginx-passenger-ubuntu.git
   
   копируем скрипт
   
