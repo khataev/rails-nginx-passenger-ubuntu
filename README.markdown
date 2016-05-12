@@ -135,6 +135,11 @@ Update and upgrade
   устанавливаем bundler
   
     gem install bundler
+    
+Альтернатива RVM - RBENV
+------------------------
+  
+  Устанавливаем согласно [этой инструкции](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04)
 
 Устанавливка PostgreSQL
 -------------------------------
